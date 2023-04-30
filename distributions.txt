@@ -1,0 +1,7 @@
+1. A distribution is a collection of softwares bundle together under same Kernel.
+2. You can install other softwares.
+3. Kernel is heart and core of OS. is responsible for connecting H/W and S/W.
+4. Distribution is also referred as distro/flavor.
+5. Examples: Red Hat Enterprise Linux (RHEL), Ubuntu, CentOS
+6. Each distro is slightly difference.
+7.

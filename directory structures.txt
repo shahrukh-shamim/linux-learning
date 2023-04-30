@@ -1,0 +1,72 @@
+Root:-
+Path -> "/"
+top of file system hierarchy
+
+Bin:-
+Path -> "/bin"
+Binaries and other executable programs
+
+etc:-
+Path -> "/etc"
+System Configuration file
+
+Home:-
+Path -> "/home" | "/{username}"
+Home directorises, like music, movies, videos, documents and so on
+
+Optional:-
+Path -> "/opt"
+Optional or third party software like avast anitvirus. They are the software that does not comes bundle up with OS.
+
+Temporary:-
+Path -> "/tmp"
+Temporary space, typically cleared on reboot.
+
+User related:-
+Path -> "/usr"
+User related programs. It can have sub directories.
+
+Var:-
+Path -> "/var"
+Variable data, notibly log files
+
+Boot:-
+Path -> "/boot"
+Contain files needed for boot of data.
+
+Media:-
+Path -> "/media"
+Used to mount removable media
+
+"/mnt"
+Used to mount external file system
+
+"root"
+root user folder
+
+Served file:-
+Path -> "/srv"
+Data that is served by system. For examples,
+"/srv/ftp" -> FTP folder
+"/srv/www" -> World wide web folder
+
+Application Directory structure
+    AN example for a program that is responsible how to handle if a specific program crash
+    /usr/local/crashplan
+    or
+    /usr/local/{program_name}/crashplan
+    Lets call this base
+    so in order to fetch binanry files
+        {base}/bin
+
+    to get configuration plan
+        {base}/etc
+
+    to access logs
+        {base}/log
+
+    to view library files
+        {base}/lib
+
+    Typically usr programs are found in
+    "/opt" or "usr/local"
