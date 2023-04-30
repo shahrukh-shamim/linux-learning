@@ -1,0 +1,23 @@
+All commands are case sensitive
+
+Present working directory
+-> pwd
+
+Change directory
+-> cd
+
+List content of directory
+-> ls
+
+Long listing format of ls
+ls -l
+
+Concatinating files
+-> cat "file.name"
+
+Clear screen
+-> clear
+
+Manual of command
+-> man ls
+

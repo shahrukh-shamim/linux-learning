@@ -1,0 +1,4 @@
+cd # takes you to home
+cd / # takes you to root
+cd ~ # takes you to home
+cd - # takes you to previous directory
