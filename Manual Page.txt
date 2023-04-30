@@ -1,0 +1,7 @@
+"man man"
+
+Enter to one line drop
+Space bar to full page drop
+"g" to start of the page
+"G" to end of the page
+"q" quit
