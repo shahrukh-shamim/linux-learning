@@ -1,0 +1,14 @@
+The shell is command line interface (also called command line interpreter)
+
+Shell start with shell prompt like
+
+[{user}@{linuxsystem} {directory}] $
+
+[{root}@{linuxsystem} {directory}] #
+
+Root is all powerful capable of doing anything and this is only limited to system administrators. Like a super user
+
+Require to install, start or stop an application outside your home
+
+Shell is default user interface.
+
