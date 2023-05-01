@@ -1,0 +1,18 @@
+ls -l
+
+for example "-rwxrwxrwx 1 vagrant vagrant    514 Nov 18 19:33 index.php"
+
+Permission
+    -rwxrwxrwx
+Number of links
+    1
+Owner name
+    vagrant
+Group name
+    vagrant
+Number of bytes in the file
+    514
+Last modification time    
+    Nov 18 19:33
+File name
+    index.php

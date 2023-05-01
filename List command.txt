@@ -1,0 +1,16 @@
+ls -l
+    Display in list format
+ls -a
+    Display hidden files too
+ls -r
+    Display in reverse order
+ls -t
+    Display in time sorted  (DESC)
+
+ls -R
+    Display current directory and all sub-directories recursive
+
+ls --color
+
+ls index.php
+    index.php

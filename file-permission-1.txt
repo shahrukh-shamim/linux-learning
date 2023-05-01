@@ -1,0 +1,61 @@
+RWD
+
+Mode    | Files                        | Directory                                        |
+Read    | Allows a file to be read     | Allows file name in the directory to be read     |
+Write   | Allows a file to be modified | Allows entries to be modified.                   |
+Execute | Allows the execution of file | Allows access to content and metadeta of content |
+
+User  u (User that owns the file)
+Group g (Users in the file group)
+Other o (Everyone else)
+All   a (All)
+
+Each user is atleast in on group and belongs to as many group as needed.
+Groups are needed to organize users
+groups command displays a user's group (or id -Gn)
+
+-rwxr-xr--
+
+- Type
+next three represent current user permissions
+next three represent members of file group permissions
+next three represent other permissions
+
+if character is present then permission is given otherwise hyphen represent permission absense
+
+chmod
+ugoa
++-= Add subtract or set permission
+rwx
+
+chmod g ++=
+rwx
+
+chmod g+rwx index.php
+
+chmod u+rwx, g+r-x index.php
+
+All permission to current user, r and execute to group and no permission to others
+chmod u=rwx, g=r-x, o= index.php
+Alternatively in Octal mode
+chmod u=7, g=101, o= index.php
+
+where 111=7
+      101=5
+
+read 4
+write 2
+execute 1
+
+
+Number | Binary | String |
+      0| 000    |  ---   |
+      1| 001    |  --x   |
+      2| 010    |  -w-   |
+      3| 011    |  -wx   |
+      4| 100    |  r--   |
+      5| 101    |  r-x   |
+      6| 110    |  rw-   |
+      7| 111    |  rwx   |
+
+      New file belongs to default group

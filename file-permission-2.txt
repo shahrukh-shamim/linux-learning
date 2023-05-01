@@ -1,0 +1,9 @@
+File Creation Mask:-
+    File creation masks determines default permission
+    If no masks are used then
+
+    777 for directories
+    666 For files
+
+    umask command set file creation mode but it works opposite to that of chmod
+    FOr example 7 for CHOWN means all permissions but for umask no permissions

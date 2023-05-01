@@ -1,0 +1,13 @@
+ls -F
+
+2022_12_08_102159_populate_technicians_from_pestpac.php*  chat-app/          google-map/        ism/                php_execute/
+2022_12_08_141747_create_technician_region_of_users.php*  client/            google-map-node/   Linux/              RandD/
+admin.rar*                                                docker-dashboard/  google-map-node-/  node-tutorial/      udemy-archives/
+ca.homestead.homestead.crt*                               env.rar*           index.php*         package-lock.json*
+
+/ Directory
+* Executable
+@ Link
+
+A link points to a file or directory
+You can use the link as if it were a file

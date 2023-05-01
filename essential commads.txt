@@ -12,7 +12,7 @@ List content of directory
 Long listing format of ls
 ls -l
 
-Concatinating files
+Concatinating files (also display content of a file)
 -> cat "file.name"
 
 Clear screen
@@ -21,3 +21,6 @@ Clear screen
 Manual of command
 -> man ls
 
+Path to a command
+-> which {command}
+    which ls
