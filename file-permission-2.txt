@@ -6,4 +6,7 @@ File Creation Mask:-
     666 For files
 
     umask command set file creation mode but it works opposite to that of chmod
-    FOr example 7 for CHOWN means all permissions but for umask no permissions
+    For example 7 for CHOWN means all permissions but for umask no permissions
+
+Change group command:-
+	chgrp groupname filename.txt

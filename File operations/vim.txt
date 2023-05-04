@@ -1,0 +1,22 @@
+vi file.txt #edit mode
+vim file.txt #same as vi but more feature
+view file.txt #Starts vim in read-only mode
+
+k Up one line
+j Down one line
+h Left one character
+l Right one character
+w Right one word
+b left one word
+^ Go to the beginning of the line
+$ Go to the end of the line
+
+:n go line n
+:$ Position cursor on last line
+
+:set nu
+:set nonu
+:help
+
+Repeating commands:-
+<number><command>

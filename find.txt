@@ -1,0 +1,20 @@
+find:-
+    find <path (optional)> <expression>
+
+    -mtime
+        days Finds that are days old
+    -size
+        Find a file greater
+    -newer
+        Find a file newer than
+    -exec {} \;
+        find . -exec file {} \;
+        runs file command on the result of file
+    -name
+    -iname
+
+locate:-
+    lists file that match a pattern using index base.
+    Faster than find
+    Queries an index of find command
+    Results are not in real time

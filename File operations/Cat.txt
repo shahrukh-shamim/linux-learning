@@ -1,0 +1,11 @@
+cat file Display content of file
+more file Browse through a text file
+less file More features than more
+head file Output the beginning (or top) portion of file (by default 10 lines)
+tail file Output the ending (or bottom) portion of file (by default 10 lines)
+
+for more lines, for example 100,
+    tail -100 file.txt
+    head -100 file.txt
+
+Both of the command are real time.
