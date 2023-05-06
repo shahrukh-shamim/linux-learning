@@ -1,0 +1,12 @@
+To delete a file:-
+    rm <filename with extention>
+
+To delete a directory with its content:-
+    rm -r <directory name>
+
+To delete a file without prompting:-
+    rm -f <filename with extention>
+
+Deleting using a pattern:-
+    rm s*
+    # remove files starting with s

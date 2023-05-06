@@ -1,0 +1,13 @@
+To copy file:-
+    cp source_directory destination_directory
+
+To copy file in interactive mode:-
+    cp -i
+    # run in interactive mode
+
+To copy recursively:-
+    cp -r source_directory destination_directory
+    # run in interactive mode
+
+To copy multiple files from a directory or multiple to a single directory
+    cp <file names space separated> <destination>

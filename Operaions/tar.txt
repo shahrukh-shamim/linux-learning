@@ -1,0 +1,17 @@
+tar c|x|t v z f <filename>
+
+c = create a tar
+x = extract
+t = display the table of contents
+v = verbose
+z = use compression
+
+for example:-
+    tar cf archive_name.tar my_directory # create
+
+    tar tf archive_name.tar # list content of newly created archive
+
+    cd some_other_directory
+    tar xf archive_name.tar # extract
+
+    tar cf compress_archive_name.tar my_directory # create compressed archive
