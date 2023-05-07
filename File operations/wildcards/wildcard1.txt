@@ -1,0 +1,17 @@
+Also called Globbing
+
+Two main wild cards
+    1. ? (match exaclty one character)
+    2. * (matches zero or more character)
+    3. Character class
+        ca[nt]*
+        ca[aeiou]*
+        ca[!aeiou]*
+    4. Named Character classes
+        [[:alpha:]]    
+        [[:alnum:]]    
+        [[:digit:]]    
+        [[:lower:]]    
+        [[:space:]]    
+        [[:upper:]]
+    4. / (to search wild card characters)    
