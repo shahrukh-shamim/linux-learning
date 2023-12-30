@@ -7,12 +7,22 @@ find:-
         Find a file greater
     -newer
         Find a file newer than
+        for example:
+        find -newer myfile.txt
+
     -exec {} \;
         find . -exec file {} \;
         runs file command on the result of file
+    
     -name
+        find by name 
+        for example:
+            find /home/shahrukh-shamim/documents/ -name MYFILE.TXT
+        Note: I have given full path, but that is not necessary, if you dont provide it will search in current folder
     -iname
-
+        case insensitive search
+        for example:
+            find /home/shahrukh-shamim/documents/ -iname MYFILE.TXT
 locate:-
     lists file that match a pattern using index base.
     Faster than find

@@ -10,3 +10,22 @@ File Creation Mask:-
 
 Change group command:-
 	chgrp groupname filename.txt
+
+When a new file is created, it automatically get assign to your primary group
+
+umask:-
+To assign default permission to new file/directory
+
+For example consider a directory `documents`, lets cd into it first, for umask to work
+
+Type      | Base Permission
+directory | 777
+file      | 666
+
+So if we `umask 002`
+
+And create a directory `my-dir` and a file `my-file.txt`
+Then their permission would be
+
+mydir -> 777 - 002 = 775
+mydir -> 666 - 002 = 664

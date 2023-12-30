@@ -12,33 +12,58 @@ All   a (All)
 
 Each user is atleast in on group and belongs to as many group as needed.
 Groups are needed to organize users
-groups command displays a user's group (or id -Gn)
+groups command displays a user's groups (or id -Gn)
 
 -rwxr-xr--
 
-- Type
+The first character, which is hyphen for our example represents Type*
 next three represent current user permissions
 next three represent members of file group permissions
 next three represent other permissions
 
 if character is present then permission is given otherwise hyphen represent permission absense
 
+Permission Categories
+
+Symbol | Category
+u      | user that owns
+g      | group
+o      | people other than group
+a      | all
+
 chmod
+This command is use to change permission
 ugoa
 +-= Add subtract or set permission
 rwx
 
-chmod g ++=
-rwx
+1.
+chmod u+rwx test.txt
+Meaning: give read, write and execute permission on test.txt to the user that owns test.txt
 
-chmod g+rwx index.php
+2.
+chmod u+r-w test.txt
+Meaning: give read permission, take away write permission on test.txt to the user that owns test.txt,
+Note that the permission for `x` (execute) is missing, which bring to an important point that it will
+remain the same as it was before
 
-chmod u+rwx, g+r-x index.php
+3.
+chmod u+rw-x test.txt
+Meaning: give read and write permission and revoke execute permission on test.txt to the user that owns test.txt
 
-All permission to current user, r and execute to group and no permission to others
-chmod u=rwx, g=r-x, o= index.php
+4.
+chmod g+rx test.txt
+Meaning: give read and execute permission to the groups that owner belongs to.
+
+5. 
+chmod u+rwx, g+r-x test.txt
+Meaning: give read, write and execute permission to the owner and give read & write and revoke execute to the groups that owner belongs to.
+
+6.
+chmod u=rwx, g=r-x, o= test.txt
+Meaning: give all permission to current user, r and execute to group and no permission to others
 Alternatively in Octal mode
-chmod u=7, g=101, o= index.php
+chmod u=7, g=101, o= test.txt
 
 where 111=7
       101=5
@@ -46,7 +71,6 @@ where 111=7
 read 4
 write 2
 execute 1
-
 
 Number | Binary | String |
       0| 000    |  ---   |
@@ -58,4 +82,18 @@ Number | Binary | String |
       6| 110    |  rw-   |
       7| 111    |  rwx   |
 
-      New file belongs to default group
+1.
+chmod 640 test.txt
+Meaning: give read & write access to user that owns test.txt
+
+2.
+
+
+New file belongs to default group
+
+*Type
+
+Symbol | Type
+-      | Regular file
+d      | Directory
+l      | Symbolic link
