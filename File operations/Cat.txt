@@ -8,4 +8,5 @@ for more lines, for example 100,
     tail -100 file.txt
     head -100 file.txt
 
-Both of the command are real time.
+Both of the command are real time. Use -f flag for real time viewing
+    tail -f file.txt

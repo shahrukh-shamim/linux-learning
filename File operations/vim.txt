@@ -20,3 +20,28 @@ $ Go to the end of the line
 
 Repeating commands:-
 <number><command>
+
+Vi Insert Mode
+
+i - insert at the cursor position
+I - insert at the beginning of the line
+a - append at the cursor position
+A - append at the end of the line
+
+Searching
+
+/<pattern> forward search
+?<pattern> reverse search
+
+In escape mode
+
+x - delete a character
+dw - word
+dd - line
+D - current position to end of line
+r - replace character
+cw - replace word
+
+There is a command
+    vimtutor
+for a small textual tutorial of vim
