@@ -1,12 +1,24 @@
-Also called Globbing
+Wildcard is a character or string used pattern matching.
+
+Globbing expands the wild pattern into a list of files and/or directories. (paths)
+
+Wild can be used with most of the commands like `ls`, `rm`, `cp`, `mv`
 
 Two main wild cards
-    1. ? (match exaclty one character)
+    1. ? (match exactly one character)
+        ?.txt
+        a?
+        a?.txt
     2. * (matches zero or more character)
+        *.txt
+        a*
+        a*.txt
     3. Character class
-        ca[nt]*
-        ca[aeiou]*
-        ca[!aeiou]*
+        ca[nt]* {cat, can, cant, catn, cannnnnnn}
+        ca[aeiou]*  start with `c` and `a` and after that only vowels
+        ca[!aeiou]* start with `c` and `a` and after that anything but vowel
+        [a-g]* All files that may start from a,b, c, d, e, f, g
+        myfile[0-2] start with `myfile` and ends on {0,1,2}
     4. Named Character classes
         [[:alpha:]]    
         [[:alnum:]]    
