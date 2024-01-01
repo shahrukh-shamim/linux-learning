@@ -6,17 +6,44 @@ Standard Output | stdout       | 1
 Standard Error  | stderr       | 2
 
 Redirection
+    >
     Redirects standard output to a File
     Overwrites (truncating) existing contents.
+    `ls documents -ali > ls.txt`
+    Writes the result of ls -ali of documents directory to ls.txt, overwriting it
+    The above command can also be wriiten as 
+    `ls documents -ali 1> ls.txt`
 
+    >>
     Redirects standard output to a file.
     Appends to any existing contents.
+    `ls -ali >> ls.txt`
+    Appends result of ls -ali of current directory to ls.txt
 
+    2>
+    Redirects standard output to a file.
+    ls disco.txt 2> err.txt
+
+    <
     Redirects input from a file to a command.
+    `sort < ls.txt`
+    Sorts the content of ls.txt
 
-    & - Used with redirection to signal that a file descriptor is being used
-    2>&1 - Combine stderr and standard output.
-    2>file Redirects standard error to a file.
-    >/dev/null Redirect output to nowhere
+    The below command writes output to out.txt while error to err.txt
+    ls disco.txt ls.txt 1>out.txt 2>err.txt
+
+    &
+    Used with redirection to signal that a file descriptor is being used
+    
+    2>&1
+    Combine stderr and standard output.
+    ls disco.txt ls.txt 1>both.txt 2>&1
+
+
+    2>file
+    Redirects standard error to a file.
+    
+    >/dev/null
+    Redirect output to nowhere
 
 
