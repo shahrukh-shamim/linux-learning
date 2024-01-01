@@ -1,0 +1,4 @@
+Displays the file type
+
+shahrukh-shamim@DESKTOP-SV64JRS:~/documents$ file file2.txt
+file2.txt: ASCII text
