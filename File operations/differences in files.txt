@@ -1,0 +1,28 @@
+1. diff file1.txt file2.txt
+    Compare two files
+    
+    < Line from first file
+    > Line from second file
+    --- separator
+
+    c means change
+    d means delete
+    a means add
+
+    3c3
+
+
+2. sdiff file1.txt file2.txt
+    side-by-side compare
+
+    | Line with difference
+    < Line missing from second file
+    > Line missing from first file
+3. vimdiff file1.txt file2.txt
+    highlight differences in vim
+
+    CTRL-w w To go to next window
+    :q close current window
+    :qa close all
+    :qa! close all
+
