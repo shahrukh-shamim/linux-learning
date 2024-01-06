@@ -1,0 +1,3 @@
+Pipe command is used to chain command
+
+cd documents/ | ls -ali

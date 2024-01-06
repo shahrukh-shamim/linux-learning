@@ -1,7 +1,21 @@
 grep
 
 -i Perform a search, ignoring case.
--c Count the numberof occurences in a file
+-c Count the number of occurences in a file
 -n Precede output with line numbers
 -v Invert match, Print lines that don't match
 
+grep Sha file2.txt
+    Find lines where 'Sha' exist. (case sensitive)
+
+grep Sha -i file2.txt
+    Find lines where 'Sha' exist. (case insensitive)
+
+grep Sha -v file2.txt
+    Find lines where the term `Sha` doesnot exist (case sensitive)
+
+grep Sha -vi file2.txt
+    Find lines where the term `Sha` doesnot exist (case insensitive)
+
+grep Sha -vin file2.txt
+    Find lines where the term `Sha` doesnot exist (case insensitive), also display line numbers
