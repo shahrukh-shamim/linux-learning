@@ -1,0 +1,24 @@
+Bash, ksh, sh uses $PS1
+
+Csh, tcsh, zsh uses $promot
+
+Customizing the Promot with PS1
+\d Date in "Weekday Month Date" format, example "Tue May 26"
+\h Hostname up to the first period
+\H Hostname
+\n Newline
+\t Current time in 24-hour
+\T Current time in 12-hour
+
+\@ Current time in 12-hour am/pm format
+\A Current time in 24-hour HH:MM format
+\u Username of the current user
+\w Current working directory
+\W Basename of the current working directory
+\$ if the effective UID is 0, a # otherwise a $
+
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$"
+shahrukh-shamim@DESKTOP-SV64JRS:~/documents$
+
+PS1="\u \d \A \w \$"
+shahrukh-shamim Sun Jan 07 00:13 ~/documents
