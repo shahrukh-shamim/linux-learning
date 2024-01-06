@@ -1,0 +1,15 @@
+`alias` creates aliasses
+
+For example,
+
+alias cls='clear'
+
+creates an alias to `cls` that works exactly like `clear` command
+
+To remove alias, use
+
+unalias cls
+
+To list all aliases use,
+
+alias
